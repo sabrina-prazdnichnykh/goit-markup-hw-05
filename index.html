@@ -30,7 +30,9 @@
           >
           <ul class="header-nav-list">
             <li>
-              <a href="./index.html" class="header-nav-link">Studio</a>
+              <a href="./index.html" class="header-nav-link active-link"
+                >Studio</a
+              >
             </li>
             <li>
               <a href="" class="header-nav-link">Portfolio</a>
@@ -439,7 +441,7 @@
           </p>
         </div>
         <div class="footer-social">
-          <p class="footer-text-social">Social media</p>
+          <p class="footer-text">Social media</p>
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="footer-social-link" href="" target="_blank">
@@ -470,6 +472,26 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="footer-subscribe">
+          <p class="footer-text">Subscribe</p>
+          <form class="footer-subscribe-input-list">
+            <label class="label-subscribe" for="footer-subscribe">
+              <input
+                type="email"
+                class="form-input"
+                name="email"
+                id="footer-subscribe"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="subscribe-button" type="submit" name="submit">
+              Subscribe
+              <svg class="icon-telegram" width="24" height="24">
+                <use href="./images/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>

@@ -79,7 +79,7 @@ img {
     gap: 40px;
 }
 
-.header-nav-link{
+.header-nav-link {
     color: #2E2F42;
     font-weight: 500;
     font-size: 16px;
@@ -88,11 +88,14 @@ img {
     padding: 24px 0 24px;
     display: block;
     position: relative;
-    color: #404bbf;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-nav-link::after {
+.header-nav-link.active-link {
+    color: #404bbf;
+}
+
+.header-nav-link.active-link::after {
     content: "";
     width: 100%;
     position: absolute;
@@ -103,7 +106,7 @@ img {
     border-radius: 2px;
 }
 
-.header-nav-link:hover, .header-nav-link:focus {
+.header-nav-link.active-link:hover, .header-nav-link.active-link:focus {
     color: #404BBF;
 }
 
@@ -137,6 +140,7 @@ img {
 /* hero */
 
 .hero-section {
+    margin: 0 auto;
     background-color: #2E2F42;
     padding: 188px 0 188px;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
@@ -458,7 +462,7 @@ img {
     margin-right: 120px;
 }
 
-.footer-text-social{
+.footer-text {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -497,4 +501,76 @@ img {
 .footer .container {
     display: flex;
     align-items: baseline;
+}
+
+.footer-subscribe {
+    width: 453px;
+    height: 80px;
+    margin-left: 80px;
+}
+
+.footer-subscribe-input-list {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.form-input {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
+
+    border: 1px solid #fff;
+    border-radius: 4px;
+    width: 264px;
+    height: 40px;
+    background: #2e2f42;
+    padding: 8px 16px;
+    background-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    outline: none;
+}
+
+.form-input:focus {
+    border: 2px solid #31d0aa;
+}
+
+.subscribe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    padding-left: 24px;
+    padding-right: 16px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+    
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background-color: #4d5ae5;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 24px;
+    min-width: 165px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.subscribe-button:hover,
+.subscribe-button:focus {
+    background-color: #31d0aa;
+}
+
+.icon-telegram {
+    margin-left: 16px; 
 }
