@@ -574,3 +574,150 @@ img {
 .icon-telegram {
     margin-left: 16px; 
 }
+
+/* ---------MODAL----------- */
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+}
+
+.modal {
+    border-radius: 4px;
+    width: 408px;
+    min-height: 584px;
+
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+    background: #fcfcfc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 24px;
+}
+
+.close-button {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #e7e9fc;
+    padding: 0;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 24px;
+    
+    right: 24px;
+    background-color: #e7e9fc;
+}
+
+.icon-close{
+    top: 24px;
+    right: 24px;
+    fill: #2e2f42;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    stroke-width: 1px;
+}
+
+.close-button:hover,
+.close-button:focus {
+    border: none;
+    background-color: #404bbf;
+}
+
+.close-button:hover .icon-close,
+.close-button:focus .icon-close {
+    fill: #ffffff;
+}
+
+.modal-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+.modal-form {}
+
+.modal-field {
+    margin-bottom: 8px;
+}
+
+.modal-form-label {
+    display: block;
+    font-weight: 400;
+    font-size: 12px;
+
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+
+.modal-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 38px;
+    padding-right: 24px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-input:focus + .icon-input{
+    fill: #4D5AE5;
+}
+
+.input-wrapper {
+    position: relative;
+}
+
+.icon-input {
+    position: absolute;
+    fill: #2E2F42;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    
+}
+
+
+.modal-textarea {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding-left: 16px;
+    padding-top: 8px;
+    outline: transparent;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    padding: 8px 16px;
+    resize: none;
+    letter-spacing: 0.04em;
+    color: rgba(46, 47, 66, 0.4);
+}
+.modal-button-submit {}
